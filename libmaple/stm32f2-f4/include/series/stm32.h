@@ -25,12 +25,12 @@
  *****************************************************************************/
 
 /**
- * @file libmaple/stm32f2/include/series/stm32.h
- * @brief STM32F2 chip- and series-specific definitions.
+ * @file libmaple/stm32f2-f4/include/series/stm32.h
+ * @brief STM32F2-F4 chip- and series-specific definitions.
  */
 
-#ifndef _LIBMAPLE_STM32F2_STM32_H_
-#define _LIBMAPLE_STM32F2_STM32_H_
+#ifndef _LIBMAPLE_STM32F2F4_STM32_H_
+#define _LIBMAPLE_STM32F2F4_STM32_H_
 
 #ifdef __cplusplus
 extern "C" {
@@ -51,13 +51,13 @@ extern "C" {
 #   define STM32_TIMER_MASK             0x3E
 /* TODO: This value for STM32_SRAM_END is very generous */
 #   define STM32_SRAM_END               ((void*)0x20020000)
-#elif defined(MCU_STM32F401CC)
+#elif defined(MCU_STM32F401CC) || defined(MCU_STM32F401RB)
 #   define STM32_MCU_SERIES             STM32_SERIES_F4
 #   define STM32_NR_GPIO_PORTS          3
 #   define STM32_TIMER_MASK             0x3E
 #   define STM32_SRAM_END               ((void*)0x20010000)
 #else
-#warning "Unsupported or unspecified STM32F2 MCU."
+#warning "Unsupported or unspecified STM32F2-F4 MCU."
 #endif
 
 /*

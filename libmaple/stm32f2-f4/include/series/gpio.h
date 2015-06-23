@@ -25,12 +25,12 @@
 *****************************************************************************/
 
 /**
- * @file libmaple/stm32f2/include/series/gpio.h
- * @brief STM32F2 GPIO support.
+ * @file libmaple/stm32f2-f4/include/series/gpio.h
+ * @brief STM32F2-F4 GPIO support.
  */
 
-#ifndef _LIBMAPLE_STM32F2_GPIO_H_
-#define _LIBMAPLE_STM32F2_GPIO_H_
+#ifndef _LIBMAPLE_STM32F2F4_GPIO_H_
+#define _LIBMAPLE_STM32F2F4_GPIO_H_
 
 #ifdef __cplusplus
 extern "C"{
